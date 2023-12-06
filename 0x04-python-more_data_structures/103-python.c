@@ -7,6 +7,7 @@ void print_python_bytes(PyObject *p);
  * print_python_list - prints information about python lists.
  * @p: A PyObject list
  */
+void print_python_list(PyObject *p)
 {
 	int size, alloc, i;
 	const char *type;
@@ -33,6 +34,7 @@ void print_python_bytes(PyObject *p);
  * print_python_bytes - Prints information about python bytes objects.
  * @p: A PyObject byte object
  */
+void print_python_bytes(PyObject *p)
 {
 	unsigned char i, size;
 	PyBytesObject *bytes = (PyBytesObject *)p;
